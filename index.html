@@ -241,20 +241,20 @@ nav a {
 }
 
 .about-content {
-    max-width: 600px;
+    max-width: 560px;
 }
 
 .about-label {
     font-size: 13px;
     letter-spacing: 3px;
     font-weight: bold;
-    margin-bottom: 20px;
+    margin: 0 0 20px;
 }
 
 .about-content h2 {
     font-size: 52px;
     line-height: 1.05;
-    margin: 0 0 25px;
+    margin: 0 0 30px;
     font-weight: 600;
 }
 
@@ -262,53 +262,76 @@ nav a {
     font-size: 17px;
     line-height: 1.7;
     color: #666;
-    margin-bottom: 18px;
+    margin: 0 0 18px;
 }
 
 .about-highlight {
     background: #f5e4df;
-    padding: 45px;
+    padding: 55px;
     border-radius: 24px;
     box-sizing: border-box;
 }
 
-.about-highlight span {
+.about-quote {
+    font-size: 27px;
+    line-height: 1.4;
+    margin: 0;
+    font-weight: 500;
+}
+
+.about-line {
+    width: 100%;
+    height: 1px;
+    background: rgba(51, 51, 51, 0.2);
+    margin: 45px 0;
+}
+
+.about-details {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.about-details span {
     display: block;
-    font-size: 12px;
+    font-size: 11px;
     letter-spacing: 2px;
     color: #888;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
 }
 
-.about-highlight strong {
-    display: block;
-    font-size: 26px;
-    margin-bottom: 7px;
+.about-details strong {
+    font-size: 18px;
     font-weight: 600;
-}
-
-.about-highlight p {
-    font-size: 15px;
-    line-height: 1.6;
-    color: #666;
-    margin: 0 0 32px;
 }
     #services {
         padding: 70px 20px;
     }
-  #about {
+#about {
     grid-template-columns: 1fr;
-    gap: 35px;
+    gap: 45px;
     padding: 80px 20px;
 }
 
-    .about-content h2 {
-        font-size: 40px;
-    }
+.about-content h2 {
+    font-size: 42px;
+}
 
-    .about-highlight {
-        padding: 35px 28px;
-    }
+.about-highlight {
+    padding: 35px 28px;
+}
+
+.about-quote {
+    font-size: 23px;
+}
+
+.about-details {
+    gap: 12px;
+}
+
+.about-details strong {
+    font-size: 16px;
+}
 }
     </style>
 </head>
@@ -348,35 +371,45 @@ nav a {
 
 <section id="about">
     <div class="about-content">
-        <div class="about-label">
-            ABOUT BLOOM
-        </div>
+        <p class="about-label">ABOUT BLOOM</p>
 
-        <h2>A little time<br>just for you.</h2>
+        <h2>Beauty begins<br>with a little care.</h2>
 
         <p>
-            Bloom Nail Studio is a modern nail salon created for
-            beautiful nails, relaxing moments and a little self-care.
+            At Bloom Nail Studio, we believe your appointment should be
+            more than just a manicure. It is a moment to slow down,
+            relax and leave feeling your best.
         </p>
 
         <p>
-            From classic manicures to creative nail art, every service
-            is designed to leave you feeling polished and confident.
+            From timeless natural nails to creative nail art, we focus
+            on thoughtful details and beautiful results.
         </p>
     </div>
 
     <div class="about-highlight">
-        <span>01</span>
-        <strong>Relax.</strong>
-        <p>Take a moment to slow down and enjoy your appointment.</p>
+        <p class="about-quote">
+            “A little time for yourself can make all the difference.”
+        </p>
 
-        <span>02</span>
-        <strong>Refresh.</strong>
-        <p>Give your nails the care and attention they deserve.</p>
+        <div class="about-line"></div>
 
-        <span>03</span>
-        <strong>Bloom.</strong>
-        <p>Leave feeling fresh, confident and ready for anything.</p>
+        <div class="about-details">
+            <div>
+                <span>01</span>
+                <strong>Relax</strong>
+            </div>
+
+            <div>
+                <span>02</span>
+                <strong>Refresh</strong>
+            </div>
+
+            <div>
+                <span>03</span>
+                <strong>Bloom</strong>
+            </div>
+        </div>
     </div>
 </section>
 
