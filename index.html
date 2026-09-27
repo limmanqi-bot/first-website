@@ -32,16 +32,40 @@
             color: #333;
         }
 
-        .hero {
-            text-align: center;
-            padding: 100px 20px;
-            background: #f5e4df;
-        }
+      .hero {
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 60px 20px;
+    background: #f5e4df;
+}
 
-        .hero h1 {
-            font-size: 48px;
-            margin-bottom: 15px;
-        }
+.hero-content {
+    max-width: 700px;
+}
+
+.eyebrow {
+    font-size: 13px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 64px;
+    line-height: 1.05;
+    margin: 0 0 25px;
+}
+
+.hero-text {
+    font-size: 19px;
+    line-height: 1.6;
+    margin-bottom: 35px;
+}
+
+ 
 
         .hero p {
             font-size: 18px;
@@ -99,9 +123,18 @@
 </header>
 
 <section class="hero">
-    <h1>Beautiful Nails, Beautiful You</h1>
-    <p>Professional nail care and nail art in Petaling Jaya.</p>
-    <a href="#contact" class="button">Book an Appointment</a>
+    <div class="hero-content">
+        <p class="eyebrow">NAIL CARE • NAIL ART • SELF CARE</p>
+
+        <h1>Your Nails,<br>Your Moment.</h1>
+
+        <p class="hero-text">
+            Luxury nail care and detailed nail art,
+            designed especially for you.
+        </p>
+
+        <a href="#contact" class="button">Book an Appointment</a>
+    </div>
 </section>
 
 <section id="about">
